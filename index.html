@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/style.css">
+    <title>Página de Astronomía</title>
+</head>
+
+<body style="background-image:url('static/img/nebulosa.jpg'); height:700px;">
+    <!--vamos a crear un encabezado donde colocaremos los elementos como barrá de navegación y pagetitle-->
+    <header>
+
+    <!-- logo  que me lleva  a inicio -->
+        <div class="container" style="float:left;">
+
+            <a href="https://www.eso.org/public/spain/about-eso/" target="_blank" title="logo de inicio">
+                <img src="static/img/logo.jpg" style="width: 70px; height: 70px;" alt="logo de inicio"> 
+            </a>
+
+        </div>
+    <!-- fin de logo de inicio -->
+
+        <nav id="barra_usual">
+            <ul>
+                <li>
+                    <a href="index.html" target="_self" title="regreso a página de Inicio">Inicio</a>
+                </li>
+                <li>
+                    <a href="https://www.nasa.gov/" target="_blank" title="Redirecciona a página de la NASA">Nasa</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!--fin de la barra de navegación -->
+
+        <br><br>
+
+        <div class="container">
+            <h1>Astronomía para principiantes </h1>
+            <hr>
+        </div>
+
+    </header>
+
+    <div>
+        <table id="table_01" style="margin-right:auto; margin-left:auto;">
+            <caption style="font-size:15px;">Estrellas distancia media </caption>
+            <thead>
+                <tr>
+                    <th>Nombre estrella</th>
+                    <th>Distancia</th>
+                    <th>Anios</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Antares</td>
+                    <td>50 años luz</td>
+                    <td>Indefinido</td>
+                </tr>
+                <tr>
+                    <td>Aldebarán</td>
+                    <td>65.23 años luz</td>
+                    <td>Indefinido</td>
+                </tr>
+                <tr>
+                    <td>Sol</td>
+                    <td>300.000 km</td>
+                    <td>millones de años</td>
+                </tr>
+            </tbody>
+        </table>
+        <br><br>
+    </div>
+
+    <!--iframe página interna de la página actual -->
+        <div class="container">
+            <iframe src="" frameborder="0" name="iframe_cosmos" style="width: 300px; height: 300px;"></iframe>
+            <br>
+            <button style="color:white; background-color: black;">
+                <a href="https://www.nationalgeographicla.com/cosmos" target="iframe_cosmos">cosmos</a>
+            </button>
+        </div> 
+    <!--fin del iframe-->
+
+    <div class="container">
+        <h1 id="text_change">Change this</h1>
+        <button onclick="display_result()">Change this </button>
+
+    </div>
+    <br>
+
+    <!--botón que nos muestre la hora actual, en nuestra página -->
+    <div class="container">
+        <p id="time"></p>
+
+        <button onclick="display_date()">Mostrat hora</button>
+    </div>
+    <!--fin de botón que muestra la hora -->
+
+    <br>
+
+    <!--botón que me permita encender y apagar un bombillo  -->
+
+    <div class="container">
+        <img id="bombillo" src="static/img/pic_bulboff.gif" alt="bombillo">
+        <button onclick="light(0)">Apagar bombillo </button>
+        <button onclick="light(1)">Encender bombillo</button>
+    </div>
+    <!--fin de botón -->
+
+    <!--pie de página -->
+    <br><br><br>
+    <footer>
+        <div class="container">
+            <p>Astronomía para principiantes 2020, All rights reserved</p>
+        </div>
+    </footer>
+
+    <!--referenciamos al archivo donde crearemos nuestro script -->
+    <script src="static/js/functions.js"></script>
+
+</body>
+
+</html>

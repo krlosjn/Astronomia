@@ -1,0 +1,131 @@
+.container {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+
+
+/*barra de navegación inicio estilo sencillo*/
+
+
+/* #barra_navegacion li {
+    list-style-type: none;
+    display: inline;
+}
+
+#barra_navegacion ul {
+    text-align: right;
+}
+
+#barra_navegacion a:link {
+    text-decoration: none;
+}
+
+#barra_navegacion a:visited {
+    color: green;
+}
+
+#barra_navegacion a:hover {
+    text-decoration: underline;
+    color: yellow;
+} */
+
+
+/*fin de la barra de navegación, estilo sencillo */
+
+
+/*barra de navegación estilo navbar usual*/
+
+#barra_usual ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    background-color: grey;
+}
+
+#barra_usual li,
+a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+}
+
+#barra_usual li {
+    float: left;
+}
+
+#barra_navegacion li,a:hover {
+    background-color: black;
+}
+
+
+/*fin de barra de navegación */
+
+#table_01 th,
+tr,
+td,
+table {
+    border: 1px solid white;
+    border-collapse: collapse;
+    color: white;
+}
+
+#table_01 td {
+    padding: 10px;
+}
+
+#table_01 th {
+    text-align: left;
+    background-color: black;
+}
+
+#table_01 td {
+    width: 150px;
+}
+
+
+/*colocaremos estilos para una tabla cebreada. filas impares  */
+
+#table_01 tr:nth-child(odd) {
+    background-color: grey;
+}
+
+
+/*colaremos estilos para filas pares con even */
+
+#table_01 tr:nth-child(even) {
+    background-color: black;
+}
+/* estilos para barra de navegación alterna */
+
+#tabla_proximo ul{
+    padding:0px;
+    margin:0px;
+    overflow: hidden;
+    background-color: black;
+
+}
+
+#tabla_proximo li{
+    list-style-type: none;
+    float:right;
+    padding: 8px;
+    display: block;   
+}
+
+#tabla_proximo a{
+    color:red;
+}
+
+#tabla_proximo a:hover{
+    background-color: brown;
+}
+
+
+/*fin barra de navegación*/
+
+
+
